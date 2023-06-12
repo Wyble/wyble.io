@@ -1,8 +1,5 @@
 <script setup lang="ts">
-import { compile, computed, ref } from 'vue'
-import { register } from 'swiper/element'
-
-register()
+import { computed, ref } from 'vue'
 
 const selected = ref('all')
 const categories = [
