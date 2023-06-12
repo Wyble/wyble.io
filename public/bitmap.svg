@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:export-filename="bitmap.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false" />
+  <defs
+     id="defs2">
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter1624"
+       x="-0.57374603"
+       y="-0.58530986"
+       width="2.1474919"
+       height="2.1706197">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="18.224332"
+         id="feGaussianBlur1626" />
+    </filter>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g1659"
+       transform="translate(0,0.92982093)">
+      <ellipse
+         style="mix-blend-mode:normal;fill:#a78bfa;fill-opacity:1;stroke-width:0.264583;filter:url(#filter1624)"
+         id="ellipse1628"
+         cx="106.70158"
+         cy="145.38899"
+         rx="38.116516"
+         ry="37.363457"
+         transform="matrix(1.3238829,0,0,1.144325,13.864904,-66.59408)" />
+      <ellipse
+         style="mix-blend-mode:normal;fill:#a78bfa;fill-opacity:1;stroke-width:0.264583;filter:url(#filter1624)"
+         id="ellipse1630"
+         cx="106.70158"
+         cy="145.38899"
+         rx="38.116516"
+         ry="37.363457"
+         transform="matrix(1.3238829,0,0,1.144325,-80.14496,-49.790332)" />
+      <g
+         id="g1639">
+        <ellipse
+           style="mix-blend-mode:normal;fill:#a78bfa;fill-opacity:1;stroke-width:0.264583;filter:url(#filter1624)"
+           id="path111"
+           cx="106.70158"
+           cy="145.38899"
+           rx="38.116516"
+           ry="37.363457"
+           transform="matrix(1.3238829,0,0,1.144325,-34.684278,-21.634705)" />
+        <ellipse
+           style="mix-blend-mode:normal;fill:#a78bfa;fill-opacity:1;stroke-width:0.264583;filter:url(#filter1624)"
+           id="ellipse1632"
+           cx="106.70158"
+           cy="145.38899"
+           rx="38.116516"
+           ry="37.363457"
+           transform="matrix(1.3238829,0,0,1.144325,-34.684278,-21.634705)" />
+        <ellipse
+           style="mix-blend-mode:normal;fill:#a78bfa;fill-opacity:1;stroke-width:0.264583;filter:url(#filter1624)"
+           id="ellipse1634"
+           cx="106.70158"
+           cy="145.38899"
+           rx="38.116516"
+           ry="37.363457"
+           transform="matrix(1.3238829,0,0,1.144325,-34.684278,-21.634705)" />
+      </g>
+    </g>
+  </g>
+</svg>
