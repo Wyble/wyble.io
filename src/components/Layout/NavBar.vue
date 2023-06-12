@@ -8,7 +8,7 @@
         <img
           src="/docs@tinypng.d9e4dcdc.png"
           alt=""
-          class="w-[71.75rem] flex-none max-w-none dark:hidden"
+          class="w-[71.75rem] flex-none max-w-none hidden"
           decoding="async"
         />
       </picture>
@@ -17,7 +17,7 @@
         <img
           src="/docs-dark@tinypng.1bbe175e.png"
           alt=""
-          class="w-[90rem] flex-none max-w-none hidden dark:block"
+          class="w-[90rem] flex-none max-w-none block"
           decoding="async"
         />
       </picture>
@@ -25,12 +25,10 @@
   </div>
 
   <div
-    class="sticky top-0 z-40 w-full backdrop-blur flex-none transition-colors duration-500 lg:z-50 lg:border-b dark:border-neutral-50/[0.06] bg-white/95 supports-backdrop-blur:bg-white/60 dark:bg-transparent"
+    class="sticky top-0 z-40 w-full backdrop-blur flex-none transition-colors duration-500 lg:z-50 lg:border-b border-neutral-50/[0.06] supports-backdrop-blur:bg-white/60 bg-transparent"
   >
     <div class="mx-auto max-w-7xl">
-      <div
-        class="py-4 mx-4 border-b border-neutral-900/10 lg:px-8 lg:border-0 dark:border-neutral-300/10 lg:mx-0"
-      >
+      <div class="py-4 mx-4 border-b lg:px-8 lg:border-0 border-neutral-300/10 lg:mx-0">
         <div class="relative flex items-center">
           <a class="mr-3 flex-none w-[2.0625rem] overflow-hidden md:w-auto" href="/">
             <span class="sr-only">Tailwind CSShome page</span>
@@ -38,7 +36,7 @@
           <span class="mx-5">LOGO</span>
 
           <div class="relative items-center hidden ml-auto lg:flex">
-            <nav class="text-sm font-semibold leading-6 text-neutral-700 dark:text-neutral-200">
+            <nav class="text-sm font-semibold leading-6 text-neutral-200">
               <ul class="flex space-x-8">
                 <li>
                   <a
