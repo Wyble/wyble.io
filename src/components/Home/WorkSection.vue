@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 
-const selected = ref('all')
+const selected = ref('web')
 const categories = [
-  { name: 'View All', key: 'all', count: 0 },
+  // { name: 'View All', key: 'all', count: 0 },
   { name: 'Web Design', key: 'web', count: 5 },
   { name: 'Mobile Apps', key: 'mobile', count: 6 },
   { name: 'Desktop Apps', key: 'desktop', count: 4 },
@@ -11,8 +11,8 @@ const categories = [
   { name: 'Films', key: 'film', count: 3 }
 ]
 
-const total = categories.reduce((prev, curr) => (prev += curr.count), 0)
-categories[0].count = total
+// const total = categories.reduce((prev, curr) => (prev += curr.count), 0)
+// categories[0].count = total
 
 const projects = [
   {
@@ -169,6 +169,10 @@ const filterProjects = computed(() =>
     <div class="md:mt-52 pt-32 pb-16 mx-4 xl:mx-auto">
       <h2 class="text-4xl mb-4">Inspiring Highlights of Our Digital Creations</h2>
 
+      <p class="mb-8 text-lg leading-normal tracking-tighter md:text-2xl">
+        Experience the synergy of artistry and technology through our captivating portfolio.
+      </p>
+
       <div class="flex flex-wrap justify-center xl:justify-start">
         <button
           v-auto-animate
@@ -178,7 +182,6 @@ const filterProjects = computed(() =>
           :class="selected === category.key ? 'border-violet-400 bg-violet-600 bg-opacity-50 ' : ''"
           class="m-1 py-3 px-5 rounded-full border text-neutral-300 font-bold inline-flex items-center justify-center gap-2 transition-colors duration-300"
         >
-          {{ category.name }}
           <svg
             v-if="category.key === 'web'"
             xmlns="http://www.w3.org/2000/svg"
@@ -253,6 +256,7 @@ const filterProjects = computed(() =>
               d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z"
             />
           </svg>
+          <span class="hidden md:inline-block">{{ category.name }}</span>
           <span
             :class="
               selected === category.key
@@ -266,7 +270,7 @@ const filterProjects = computed(() =>
       </div>
 
       <ul
-        class="py-8 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 place-items-center gap-4"
+        class="py-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 place-items-center gap-4"
         v-auto-animate
       >
         <li v-for="project in filterProjects" :key="project.name" class="h-full">
