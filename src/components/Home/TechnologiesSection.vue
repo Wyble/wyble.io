@@ -2,9 +2,9 @@
 import { Icon } from '@iconify/vue'
 </script>
 <template>
-  <section class="min-h-screen">
+  <section class="mb-52 lg:mb-56">
     <div class="pt-32 pb-16 mx-4 md:mx-6 xl:mx-auto">
-      <h2 class="text-4xl lg:text-6xl my-10">Technologies we have used</h2>
+      <h2 class="text-4xl lg:text-6xl my-10 font-heading">Technologies we have used</h2>
       <div class="flex justify-center items-center gap-5 flex-wrap">
         <a
           href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"

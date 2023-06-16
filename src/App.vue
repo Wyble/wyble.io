@@ -9,7 +9,7 @@ import TechnologiesSection from '@/components/Home/TechnologiesSection.vue'
 <template>
   <NavBar></NavBar>
 
-  <main class="mx-auto max-w-screen-2xl">
+  <main class="mx-auto max-w-screen-2xl lg:px-8">
     <!-- hero section -->
     <HeroSection />
     <ProcessSection />

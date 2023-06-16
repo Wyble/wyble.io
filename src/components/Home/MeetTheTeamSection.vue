@@ -3,11 +3,11 @@ import { Icon } from '@iconify/vue'
 </script>
 
 <template>
-  <section class="min-h-screen">
+  <section class="mb-52 lg:mb-56">
     <div class="pb-16 mx-4 xl:mx-auto">
-      <h2 class="text-4xl mb-4">Driven by Passion and Expertise</h2>
+      <h2 class="text-4xl mb-4 font-heading">Driven by Passion and Expertise</h2>
 
-      <p class="mb-8 text-lg leading-normal tracking-tighter md:text-2xl">
+      <p class="mb-8 text-lg tracking-tighter md:text-2xl lg:w-2/3 leading-loose">
         Our team is composed of experienced web designers, skilled developers, talented mobile app
         specialists, meticulous UI/UX designers, and visionary filmmakers. With diverse backgrounds
         and a shared passion for technology and storytelling, we are united in our mission to

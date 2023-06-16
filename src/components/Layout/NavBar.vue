@@ -1,5 +1,5 @@
 <template>
-  <div
+  <!-- <div
     class="absolute inset-x-0 top-0 z-20 flex justify-center overflow-hidden pointer-events-none"
   >
     <div class="w-[108rem] flex-none flex justify-end">
@@ -22,7 +22,7 @@
         />
       </picture>
     </div>
-  </div>
+  </div> -->
 
   <div
     class="sticky top-0 z-40 w-full backdrop-blur flex-none transition-colors duration-500 lg:z-50 lg:border-b border-neutral-50/[0.06] supports-backdrop-blur:bg-white/60 bg-transparent"
