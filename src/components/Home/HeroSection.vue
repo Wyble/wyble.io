@@ -1,5 +1,61 @@
+<script setup lang="ts">
+import gsap from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
+import { onMounted, ref } from 'vue'
+
+// create stars
+const colors = [
+  // 'bg-violet-600',
+  // 'bg-orange-600',
+  'bg-red-600',
+  // 'bg-green-600',
+  'bg-blue-600',
+  'bg-white',
+  'bg-white',
+  'bg-white'
+]
+const blurs = ['blur-[1px]', 'blur-[2px]', 'blur-[3px]']
+
+function createStar() {
+  const star = {
+    x: Math.floor(Math.random() * 100) + '%',
+    y: Math.floor(Math.random() * 60 + 20) + '%',
+    blur: blurs[Math.floor(Math.random() * blurs.length)],
+    color: colors[Math.floor(Math.random() * colors.length)]
+  }
+
+  return star
+}
+
+let stars = Array.from({ length: Math.floor(Math.random() * 20 + 10) }, createStar)
+
+// animate the stars
+const heroSection = ref<HTMLDivElement | null>(null)
+onMounted(() => {
+  gsap.registerPlugin(ScrollTrigger)
+  const starsElements = gsap.utils.toArray<HTMLDivElement>('.star')
+
+  starsElements.forEach((star) => {
+    gsap.to(star, {
+      scrollTrigger: {
+        trigger: heroSection.value,
+        toggleActions: 'play pause resume none'
+      },
+      '--x': '-10%',
+      '--y': 'random(100, 0)',
+      duration: () => Math.random() * 20 + 5,
+      repeat: Infinity,
+      onComplete() {
+        star.style.setProperty('--x', '100%')
+        star.style.setProperty('--y', Math.floor(Math.random() * 60 + 20) + '%')
+      }
+    })
+  })
+})
+</script>
+
 <template>
-  <section class="mb-52 lg:mb-56">
+  <section ref="heroSection" class="mb-52 lg:mb-56">
     <div class="relative flex items-center justify-center pt-32 mx-4 md:mx-6 md:pt-64 xl:mx-auto">
       <!-- hero content -->
       <div class="max-w-5xl mx-auto text-center">
@@ -42,6 +98,23 @@
         />
         <!-- <div class="absolute rounded-full right-1 h-96 w-96 bg-gradient-to-t from-violet-500 to-pink-700"></div> -->
       </div>
+
+      <!-- stars -->
+    </div>
+    <div class="absolute top-0 left-0 -z-50 w-full h-full">
+      <div
+        v-for="(star, i) in stars"
+        :key="i"
+        class="absolute w-1 h-1 rounded-full star"
+        :class="`${star.color} ${star.blur}`"
+        :style="`--x:${star.x};--y:${star.y}`"
+      ></div>
     </div>
   </section>
 </template>
+<style scoped>
+.star {
+  left: var(--x);
+  top: var(--y);
+}
+</style>
